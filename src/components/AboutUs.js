@@ -89,10 +89,8 @@ function About(props) {
                     <h2>Corporate Leadership</h2>
                 </div>
                 <div className="col-12">
-                    <Media list>
                         
                         {leaders}
-                    </Media>
                 </div>
             </div>
         </div>

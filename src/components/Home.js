@@ -5,7 +5,7 @@ import { Card, CardImg, CardText, CardBody,
 function RenderCard({item}) {
 
     return(
-        <Card>
+        <Card style={{minHeight:"700px"}}>
             <CardImg src={item.image} alt={item.name} />
             <CardBody>
             <CardTitle>{item.name}</CardTitle>
