@@ -20,8 +20,9 @@ class DishDetail extends Component{
 
     }
     handleSubmit(values) {
-        console.log('Current State is: ' + JSON.stringify(values));
-        alert('Current State is: ' + JSON.stringify(values));
+        // console.log('Current State is: ' + JSON.stringify(values));
+        // alert('Current State is: ' + JSON.stringify(values));
+        this.props.addComment(this.props.dish.id, values.rating, values.userName, values.message);
     }
     toggleModal(){
         this.setState({
@@ -35,7 +36,7 @@ class DishDetail extends Component{
                     <CardImg top src={dish.image} alt={dish.name} />
                         <CardBody>
                           <CardTitle style={{fontWeight:"700", fontSize:"2em"}}>{dish.name}</CardTitle>
-                          <CardText>{dish.description}</CardText>
+            <CardText>{dish.description}</CardText>
                     </CardBody>
                 </Card>
             );
